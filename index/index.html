@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>ebaoTech</title>
+		<link rel="stylesheet" type="text/css" href="css/logintab.css" />
+		<link rel="stylesheet" type="text/css" href="css/loginarea.css" />
+	</head>
+
+	<body>
+		<div class="login" id="backlogin">
+
+			<div class="logintype" id="logintab">
+				<ul class="tabul">
+					<a class="tabli">Password Login</a>
+					<a>OR Code Login</a>
+				</ul>
+			</div>
+
+			<div class="LoginArea" style="display:block" id="pwArea">
+				<form class="loginForm" id="pwform" action="right.html" method="post">
+					<input type="text" name="username" placeholder="UserName/Email/Moblie No." id="username" onkeydown="Keydown()" />
+					<input type="password" name="password" placeholder="Password" id="pw" />
+					<span id="remember"><input type="checkbox"  id="rememberMe"onclick="WriteCookie()">Remember Me</input></span>
+					<input type="button" value="Sign In" id="sign" onclick="validateForm()" />
+					<a id="forget" href="javascript:void(0)" onclick="ForgetMe()">Forget Password</a>
+				</form>
+			</div>
+
+			<div class="LoginArea">
+				<div class="loginForm">
+					<img src="img/p1.png" id="erweima" />
+					<p>Open ebaoCloud App to scan QR code</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="login" id="forgetpw">
+			<div class="loginForm" id="forgetfm">
+				<h2 id="h1">Forgot Password</h1>
+	  	<p id="p1">We'll send email to you instructions on how to reset your password.</p>
+	  	<input type="text"name="account"placeholder="Account/Email" id="account" />
+	  	<input type="button"value="Send Email" id="send" onclick="" />
+	  	<a id="back" href="javascript:void(0)" onclick="Backlogin()" >back to Login</a>
+	  	</div> 
+	 </div>
+	 
+	 	
+	<script src="js/onload.js"></script>
+	<script src="js/ForgetBack.js"></script>
+	<script src="js/verify5.js"></script>
+	</body>
+</html>

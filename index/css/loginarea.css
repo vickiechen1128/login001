@@ -1,0 +1,47 @@
+.LoginArea{
+	display: none;
+}
+
+.loginForm{
+	display:flex;
+	flex-direction: column;
+	margin: 30px 40px ;
+	
+}
+
+
+#forget,#back{
+	align-self: flex-end;
+	 text-decoration: none
+}
+.remindtext{
+	color: red;
+	text-align:left;
+
+}
+#username,#pw,#account{
+	/*border-style: none none solid none;
+	border-bottom: 2px solid ;*/
+	
+	margin: 10px 0;
+	height: 30px;
+}
+#account{background-color: #f5f5f5}
+#remember,#sign,#send{
+	margin: 6px 0;
+	height: 35px;
+}
+#sign,#send{
+	background-color: #4169E1;
+	font-weight:bold;
+	color: white;}
+#erweima{
+	max-width: 100%;
+    max-height: 250px;   
+}
+
+#h1,#p1{
+	text-align: center;
+	color: #4169E1;
+}
+#forgetfm{margin-top: 1px;}
