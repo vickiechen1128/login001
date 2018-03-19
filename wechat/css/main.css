@@ -1,0 +1,138 @@
+.main {
+	background-color: whitesmoke;
+	flex: 2;
+}
+
+.contentArea {
+	height:65%;
+}
+
+.currentPerson {
+	display: block;
+	border-bottom: 2px solid grey;
+	height: 9%;
+	text-align: center;
+	width: 100%;
+}
+
+.dialogue {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 90%;
+    z-index: -2;
+}
+
+.rightBubble,
+.leftBubble {
+	border: solid 1px black;
+	padding: 5px;
+	margin: 3px 15px;
+	border-radius: 10px;
+	word-wrap: break-word;/*自动换行 */
+	max-width: 55%;
+    position: relative;
+}
+
+.rightBubble {
+	background-color: gainsboro;
+	align-self: flex-end;
+}
+.rightTriangle{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: solid transparent;
+    border-width: 9px 12px;
+    border-left-color: black;
+    position: absolute;
+    right:-24px;
+    top:5px;
+}
+.rightTriangle:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: solid transparent;
+    border-width: 9px 12px;
+    border-left-color: gainsboro;
+    position: absolute;
+    right:-11px;
+    top:-9px;
+
+}
+
+.leftBubble {
+	background-color: greenyellow;
+	align-self: flex-start;
+}
+.leftTriangle{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: solid transparent;
+    border-width: 9px 12px;
+    border-right-color:black ;
+    position: absolute;
+    left:-24px;
+    top:5px;
+}
+.leftBubble:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: solid transparent;
+    border-width: 9px 12px;
+    border-right-color: greenyellow;
+    position: absolute;
+    left:-23px;
+    top:5px;}
+
+
+.typeArea {
+	border-top: 2px solid grey;
+	height:202px;
+}
+
+.meau2 {
+	padding: 0px;
+	margin: 3px 4px;
+	height:15%;
+}
+
+.meau2 img {
+	margin: 0px 5px;
+}
+
+.typeArea2 {
+	background-color: whitesmoke;
+	height:85%;
+	border: none;
+	overflow: scroll;
+	overflow-x: hidden;
+	position: relative;
+
+}
+
+#send {
+	height:28px;
+	margin-left: 400px;
+	margin-top: -50px;
+	border:none;
+	border-radius: 50% / 50%;
+	font-size:1em;
+	font-family: Arial;
+	magrin: 2px;
+	/*letter-spacing:1px;*/
+	background: linear-gradient(papayawhip,burlywood);
+	position: absolute;
+}
+
+#picture {
+	opacity: 0;
+	position: absolute;
+	/*采用绝对定位的目的是不影响后续元素的定位*/
+	z-index: 10;
+}

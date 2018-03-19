@@ -1,0 +1,87 @@
+.container{
+	display: flex;
+	 width: 900px;
+	 height:600px;
+}
+.aside{
+	display: flex;
+	flex-direction: column;
+	/*padding: 15px 20px;*/
+	background-color:#4E4C4C;
+	flex:1;
+}
+
+.asideIndex{
+	padding: 15px 15px 3px 15px;
+}
+.username{
+	display: flex;
+	color: white;
+	margin: 5px 0px;
+	height: 60px;
+	font-size:xx-large;
+}
+.name{
+	align-self:flex-start;
+	margin: 0px;
+	padding:0px;
+	line-height: 60px;
+}
+
+.searchtext input{
+	background-color:grey;
+	color: whitesmoke;
+	border: none;
+	margin: 1px;
+	height: 30px;
+	padding: 0px 0px 0px 30px;
+	width:270px;
+}
+.searchtext span{
+	position: absolute;
+	left:30px;
+	padding: 6px 2px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: lightgray;
+}
+.menu{
+	height:32px;
+	display: flex;
+	justify-content:space-between;
+	margin: 3px 0px;
+	padding: 5px;
+}
+.menu a.on{
+	background:whitesmoke;
+	}
+.userList{
+    width:332px;
+}
+.person div{
+	height: 60px;
+	list-style:none;
+	color:white ;
+	border-top: 1px solid grey ;
+	border-bottom: 1px solid grey ;
+	padding: 5px 20px;
+}
+.person span{
+	line-height: 30px;
+}
+.currentName{
+	font-size:x-large
+}
+.updateTime{
+	display:float;
+	float: right;
+}
+.lastMsg{
+	font-size: small;
+	white-space: nowrap;
+    text-overflow:ellipsis;
+	overflow: hidden;
+    display:block;
+}
+
+.hide{ display: none;}

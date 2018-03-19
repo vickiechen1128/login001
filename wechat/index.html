@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>wechat</title>
+    <link rel="stylesheet" type="text/css" href="css/aside.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="aside">
+        <div class="asideIndex">
+            <span class="username"><p class="name">Alice</p></span>
+            <div class="searchtext">
+                <span class="searchImg"><img src="img/search.png"/></span>
+                <input type="text" id="search" placeholder="search"/></div>
+            <ul class="menu">
+                <a href=""><img src="img/chat.png"/></a>
+                <a href=""><img src="img/activity.png"/></a>
+                <a href=""><img src="img/user.png"/></a>
+            </ul>
+        </div>
+        <div class="userList">
+            <div class="person" id="chatList">
+
+            </div>
+            <div class="person hide">
+                <div>公众号</div>
+                <div>订阅号</div>
+            </div>
+            <div class="person hide">
+                <div>Joy</div>
+                <div>Yee</div>
+                <div>Jackson</div>
+                <div>Chen</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="contentArea">
+            <div class="currentPerson"></div>
+            <div class="dialogue"></div>
+
+        </div>
+        <div class="typeArea">
+            <ul class="meau2">
+                <a href=""><img src="img/smlie.png"/></a>
+                <a href=""><img src="img/cut.png"/></a>
+                <input type="file" id="picture" multiple/><img src="img/forder.png"/>
+            </ul>
+            <div class="typeArea2" contenteditable="true">
+
+            </div>
+
+            <button id="send">Send(ctrl+enter)</button>
+        </div>
+
+    </div>
+</div>
+
+<!--
+<script src="https://code.jquery.com/jquery-2.0.0.min.js "></script>
+-->
+
+<script type="text/javascript " src="js/jquery.js "></script>
+<script type="text/javascript " src="js/jquery.min.js "></script>
+<script type="text/javascript " src="js/chat.js"></script>
+<script type="text/javascript " src="js/moment-min.js"></script>
+
+</body>
+
+</html>
